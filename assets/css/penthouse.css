@@ -222,9 +222,28 @@ li {
 }
 
 .border-gold {
-  border: 3px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-image: linear-gradient(45deg, gold, #ffd700, #b8860b) 1;
+  /* 1. On met le dégradé EN TANT QUE FOND */
+  background: linear-gradient(45deg, gold, #ffd700, #583f00);
+
+  /* 2. On applique l'arrondi AU CONTENEUR */
+  border-radius: 10px;
+
+  /* 3. On crée la "fausse bordure" avec le padding */
+  /* (Haut: 3px, Côtés: 3px, Bas: 10px) */
+  padding: 3px 3px 10px 3px;
+
+  /* 4. On garde ceci pour un affichage correct */
+  display: inline-block;
+  font-size: 0; /* Corrige un espace blanc sous l'image */
+}
+/* NOUVELLE RÈGLE : Cible l'image de Min Seol-A DANS la grille */
+.personnage-carte .border-gold img {
+  /* Annule la bordure grise de la règle générale */
+  border: none;
+  border-bottom: none;
+
+  /* Fait correspondre l'arrondi de l'image à son conteneur doré */
+  border-radius: 10px;
 }
 
 .min_seol-a-perso p {
