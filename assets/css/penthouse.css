@@ -3,6 +3,7 @@
 }
 
 .link li {
+  list-style: none;
   text-decoration: none;
   color: white;
 }
@@ -18,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between; /* espace entre le titre et le menu */
   align-items: center; /* centre verticalement */
-  background: linear-gradient(rgb(241, 173, 15), rgb(24, 22, 22));
+  background: linear-gradient(rgb(241, 184, 51), rgb(0, 0, 0));
   padding: 10px 30px;
 }
 
@@ -222,10 +223,6 @@ li {
   min-height: 100px;
   max-height: 100px;
 }
-.min p {
-  border: 3px solid transparent;
-  border-image: linear-gradient(45deg, gold, #ffd700, #b8860b) 1;
-}
 
 /* Info sur Min Seol-a */
 
@@ -255,15 +252,6 @@ li {
   /* 4. On garde ceci pour un affichage correct */
   display: inline-block;
   font-size: 0; /* Corrige un espace blanc sous l'image */
-}
-/* NOUVELLE RÈGLE : Cible l'image de Min Seol-A DANS la grille */
-.personnage-carte .border-gold img {
-  /* Annule la bordure grise de la règle générale */
-  border: none;
-  border-bottom: none;
-
-  /* Fait correspondre l'arrondi de l'image à son conteneur doré */
-  border-radius: 10px;
 }
 
 .min_seol-a-perso p {
@@ -320,4 +308,20 @@ li {
 
 .espace p {
   margin-top: 70%;
+}
+
+/* FOOTER */
+footer {
+  padding: 10px;
+  margin-top: 5%;
+  background: linear-gradient(rgb(241, 184, 51), rgb(0, 0, 0));
+}
+
+.fin-page h4 {
+  text-align: center;
+}
+
+.fin-page h4 {
+  font-size: 30px;
+  font-style: italic;
 }
