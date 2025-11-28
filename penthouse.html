@@ -12,8 +12,8 @@
     <header>
       <h1>The Penthouse</h1>
       <ul>
-        <li>Résumé</li>
-        <li>Personnages principaux</li>
+        <a class="link" href="#resume-scroll"><li>Résumé</li></a>
+        <a class="link" href="#perso-scroll"><li>Personnages</li></a>
         <li>Saisons</li>
       </ul>
     </header>
@@ -31,7 +31,7 @@
     </div>
 
     <div class="resume">
-      <h2>Résumé</h2>
+      <h2 id="resume-scroll">Résumé</h2>
 
       <p>
         <!-- " span"permet d'appliquer un style spécifique sans affecter tout le paragraphe.
@@ -55,7 +55,9 @@
 
     <!-- BOX personnages -->
     <div class="perso">
-      <h2><span class="degrader-gold">Personnages principaux</span></h2>
+      <h2 id="perso-scroll">
+        <span class="degrader-gold">Personnages principaux</span>
+      </h2>
       <div class="personnages-container">
         <div class="personnage-carte">
           <p class="nom-perso">

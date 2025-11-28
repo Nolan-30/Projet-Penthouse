@@ -1,3 +1,12 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.link li {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   background-color: #000;
   color: white;
@@ -33,6 +42,7 @@ li {
 
 .tour li a:hover {
   color: rgb(255, 0, 0);
+  transition: 1s;
 }
 
 /* Hera Palace partie */
@@ -98,7 +108,8 @@ li {
 }
 
 .resume a:hover {
-  color: cyan;
+  color: rgb(255, 255, 255);
+  transition: 1s;
 }
 
 /* placement de l'image */
@@ -160,11 +171,13 @@ li {
 
 .nom-perso a:hover {
   color: gold;
+  transition: 1s;
 }
 
 /* qd je passe sur le prenom des prsng et leur description ca passe en jaune */
 .personnage-carte p:hover {
   color: gold;
+  transition: 1s;
 }
 
 .personnage-carte img {
@@ -183,7 +196,6 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .description-perso {
   display: flex;
@@ -213,8 +225,6 @@ li {
 .min p {
   border: 3px solid transparent;
   border-image: linear-gradient(45deg, gold, #ffd700, #b8860b) 1;
-  border-top: 10px solid transparent;
-  border
 }
 
 /* Info sur Min Seol-a */
@@ -225,7 +235,6 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .min_seol-a-perso img {
   border: 3px solid transparent;
@@ -285,6 +294,7 @@ li {
 .seol-a-nom a:hover,
 .min_seol-a-perso p:hover {
   color: gold;
+  transition: 1s;
 }
 
 .seol-a-container {
