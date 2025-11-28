@@ -34,6 +34,11 @@ ul {
   gap: 20px; /* espace entre les éléments */
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+header a {
+  text-decoration: none;
 }
 
 /* Liens du menu */
@@ -312,16 +317,19 @@ li {
 
 /* FOOTER */
 footer {
+  border-top: 2px solid rgb(255, 255, 255);
   padding: 10px;
   margin-top: 5%;
   background: linear-gradient(rgb(241, 184, 51), rgb(0, 0, 0));
+  border-bottom: 2px solid white;
 }
 
 .fin-page h4 {
-  text-align: center;
-}
+  display: flex;
+  justify-content: center;
 
-.fin-page h4 {
   font-size: 30px;
   font-style: italic;
+
+  /* borders */
 }
