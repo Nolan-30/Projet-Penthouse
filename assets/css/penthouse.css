@@ -2,20 +2,23 @@
   scroll-behavior: smooth;
 }
 
-.link li {
+li,
+a {
   list-style: none;
   text-decoration: none;
+
   color: white;
 }
 
 body {
-  background-color: #000;
+  background-color: black;
   color: white;
   margin: 0;
 }
 
 /* HEADER */
 header {
+  border-top: 2px solid white;
   display: flex;
   justify-content: space-between; /* espace entre le titre et le menu */
   align-items: center; /* centre verticalement */
@@ -23,22 +26,17 @@ header {
   padding: 10px 30px;
 }
 
-h1 {
-  margin: 0;
+header img {
+  border-radius: 10px;
 }
 
 /* Liste de navigation à droite */
 ul {
   list-style: none; /* enlève les puces */
   display: flex;
-  gap: 20px; /* espace entre les éléments */
+  gap: 50px; /* espace entre les éléments */
   margin: 0;
   padding: 0;
-  text-decoration: none;
-}
-
-header a {
-  text-decoration: none;
 }
 
 /* Liens du menu */
@@ -46,7 +44,11 @@ li {
   transition: color 1s;
 }
 
-.tour li a:hover {
+header li:hover {
+  color: rgb(0, 0, 0);
+}
+
+.tour a:hover {
   color: rgb(255, 0, 0);
   transition: 1s;
 }
@@ -75,17 +77,18 @@ li {
 .penthouse-img {
   text-align: center;
   width: 100%;
-  border-radius: 10px; /* arrondi l'image du penthouse */
 }
 
 .penthouse-img img {
   border-radius: 10px;
-  border: 3px solid rgb(73, 73, 73);
+  border: 3px solid rgba(41, 41, 41, 0.489);
+  margin-bottom: 10%;
 }
 
+/* BOX RESUME */
 .resume {
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 .resume h2 {
   color: gold;
@@ -106,6 +109,7 @@ li {
 .resume h3 {
   margin-left: 8%;
   color: gold;
+  font-style: italic;
 }
 
 .resume a {
@@ -126,10 +130,15 @@ li {
 
 .img-seol-a img {
   border-radius: 10px;
+  border: 3px solid rgba(41, 41, 41, 0.489);
 }
 /*                      */
 /* box des personnages*/
 /*                  */
+
+.perso {
+  margin-bottom: 10%;
+}
 
 .perso h2 {
   margin-left: 8%;
@@ -187,17 +196,14 @@ li {
 }
 
 .personnage-carte img {
-  border: 3px solid rgb(73, 73, 73);
+  border: 3px solid rgba(41, 41, 41, 0.489);
   border-radius: 16px;
-  border-bottom: 10px solid rgb(73, 73, 73);
-}
-
-.remove-grey-border {
-  border: none !important;
+  border-bottom: 10px solid rgba(41, 41, 41, 0.489);
 }
 
 .degrader-blanc {
-  background: linear-gradient(to right, #ffffff, #5a5a5a);
+  background: linear-gradient(to right, #828282, #3f3f3f);
+
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -210,7 +216,7 @@ li {
 }
 .description-perso p {
   /* couleur */
-  border: 3px solid rgb(73, 73, 73);
+  border: 3px solid rgba(41, 41, 41, 0.489);
   border-radius: 10px;
   border-top: 0;
   margin: 0;
@@ -311,8 +317,29 @@ li {
   font-size: 30px;
 }
 
-.espace p {
-  margin-top: 70%;
+/* membres cles */
+
+.membres-cles {
+  display: flex;
+  justify-content: center;
+}
+.membres-cles p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.oblic {
+  font-style: oblique;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Box saisons */
+
+.saisons-container {
+  display: flex;
+  margin-left: 8%;
 }
 
 /* FOOTER */
@@ -321,7 +348,6 @@ footer {
   padding: 10px;
   margin-top: 5%;
   background: linear-gradient(rgb(241, 184, 51), rgb(0, 0, 0));
-  border-bottom: 2px solid white;
 }
 
 .fin-page h4 {
@@ -330,6 +356,4 @@ footer {
 
   font-size: 30px;
   font-style: italic;
-
-  /* borders */
 }
