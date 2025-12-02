@@ -8,13 +8,14 @@
   </head>
 
   <body>
-    <script src="/js/penthouse.js"></script>
     <header>
       <img src="/assets/Images/logo.jpg" height="50" width="auto" />
+
       <ul>
         <a class="link" href="#resume-scroll"><li>Résumé</li></a>
         <a class="link" href="#perso-scroll"><li>Personnages</li></a>
-        <li>Saisons</li>
+        <a class="link" href="#saison-scroll"><li>Saisons</li></a>
+        <a class="link" href="#kdrama-scroll"><li>Autres K-Dramas</li></a>
       </ul>
     </header>
     <div class="tour">
@@ -27,18 +28,17 @@
       <h2>Le luxe cache le pire des secrets</h2>
     </div>
     <div class="penthouse-img">
-      <img src="/assets/Images/penthouse .png" />
+      <img src="assets/Images/penthouse.png" />
     </div>
-
+    <!-- Box Resume -->
     <div class="resume">
-      <h2 id="resume-scroll">Résumé</h2>
+      <h2 id="resume-scroll"><span class="degrader-gold">Résumé</span></h2>
 
       <p>
         <!-- " span"permet d'appliquer un style spécifique sans affecter tout le paragraphe.
           -->
-        <!-- "em" permet de mettre du txt en italique -->
 
-        <span class="pent-jaune">Penthouse</span>
+        <span class="degrader-gold">Penthouse</span>
         , raconte la vie de familles riches vivant dans un immeuble luxueux, où
         les apparences cachent des trahisons, des meurtres et des rêves déchus.
         Entre rivalités, ambitions et drames, personne n’est vraiment innocent.
@@ -46,14 +46,14 @@
 
       <h3>"Dans le monde du luxe,même les larmes sont dorées"</h3>
       <a href="https://fr.wikipedia.org/wiki/Penthouse">
-        <p>Cliquez ci-dessous pour en savoir plus</p></a
+        <p>Cliquez ci-dessus pour en savoir plus</p></a
       >
       <div class="img-seol-a">
         <img src="/assets/Images/min-seol a.jpg" height="200" />
       </div>
     </div>
 
-    <!-- BOX personnages -->
+    <!-- BOX Personnages -->
     <div class="perso">
       <h2 id="perso-scroll">
         <span class="degrader-gold">Personnages principaux</span>
@@ -175,6 +175,29 @@
         </div>
       </div>
     </div>
+    <div class="membres-cles">
+      <p>
+        <span class="degrader-gold"
+          >Autres membres clés :
+          <span class="oblic"
+            >Logan Lee, Ha Yoon-Cheol, Lee Kyu-Jin,Bae Ro-Na, Ha Eun-Byeol</span
+          ></span
+        >
+      </p>
+    </div>
+    <!-- Box Saisons -->
+    <!-- faire la partie saison qd j'aurai fini la serie -->
+    <!--  
+    <div class="saisons-container">
+      <h2 id="saison-scroll"><span class="degrader-gold">Saisons</span></h2>
+      <a href=""><li>Saison 1</li></a>
+      <a href=""><li>Saison 2</li></a>
+      <a href=""><li>Saison 3</li></a>
+    </div>
+
+    -->
+
+    <!-- FOOTER -->
     <footer>
       <div class="fin-page">
         <h4>
@@ -182,5 +205,6 @@
         </h4>
       </div>
     </footer>
+    <script src="assets/js/penthouse.js"></script>
   </body>
 </html>
