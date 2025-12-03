@@ -74,6 +74,16 @@ header li:hover {
 .tour h2 {
   color: gold;
 }
+
+.border-grey {
+  border-top: 1px solid rgba(41, 41, 41, 0.489);
+  border-bottom: 1px solid rgba(41, 41, 41, 0.489);
+}
+
+.border-grey-perso {
+  border-top: 1px solid rgba(41, 41, 41, 0.489);
+  border-bottom: 1px solid rgba(41, 41, 41, 0.489);
+}
 .penthouse-img {
   text-align: center;
   width: 100%;
@@ -135,10 +145,6 @@ header li:hover {
 /*                      */
 /* box des personnages*/
 /*                  */
-
-.perso {
-  margin-bottom: 10%;
-}
 
 .perso h2 {
   margin-left: 8%;
@@ -209,6 +215,14 @@ header li:hover {
   -webkit-text-fill-color: transparent;
 }
 
+.degrader-blanc-footer {
+  background: linear-gradient(to right, #a8a7a7, #676666);
+
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .description-perso {
   display: flex;
 
@@ -220,6 +234,7 @@ header li:hover {
   border-radius: 10px;
   border-top: 0;
   margin: 0;
+  margin-bottom: 15%; /* pr laisser de l'espace pour mettre la border en dessous qui limite chaque grande partie */
 
   color: rgb(255, 255, 255);
 
@@ -322,6 +337,7 @@ header li:hover {
 .membres-cles {
   display: flex;
   justify-content: center;
+  margin-top: 3%;
 }
 .membres-cles p {
   color: white;
@@ -335,16 +351,18 @@ header li:hover {
   text-align: center;
 }
 
-/* Box saisons */
+/* Box saisons 
 
 .saisons-container {
   display: flex;
   margin-left: 8%;
 }
+  */
 
 /* FOOTER */
 footer {
   border-top: 2px solid rgb(255, 255, 255);
+
   padding: 10px;
   margin-top: 5%;
   background: linear-gradient(rgb(241, 184, 51), rgb(0, 0, 0));
