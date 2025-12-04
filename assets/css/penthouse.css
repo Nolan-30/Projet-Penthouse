@@ -94,13 +94,13 @@ header ul a li {
 }
 
 .border-grey {
-  border-top: 1px solid rgba(41, 41, 41, 0.489);
-  border-bottom: 1px solid rgba(41, 41, 41, 0.489);
+  border-top: 1px solid rgba(132, 132, 132, 0.489);
+  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
 }
 
 .border-grey-perso {
-  border-top: 1px solid rgba(41, 41, 41, 0.489);
-  border-bottom: 1px solid rgba(41, 41, 41, 0.489);
+  border-top: 1px solid rgba(132, 132, 132, 0.489);
+  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
 }
 .penthouse-img {
   text-align: center;
@@ -364,14 +364,14 @@ header ul a li {
 
 /* FOOTER */
 footer {
-  border-top: 2px solid rgb(255, 255, 255);
+  border-top: 1px solid rgba(132, 132, 132, 0.489);
 
   padding: 10px;
   margin-top: 5%;
-  background: linear-gradient(rgb(241, 184, 51), rgb(0, 0, 0));
+  background: linear-gradient(rgb(0, 0, 0), rgb(241, 184, 51));
 }
 
-.fin-page h4 {
+.test .fin-page h4 {
   display: flex;
   justify-content: center;
   font-family: "Lato", sans-serif;
