@@ -23,7 +23,7 @@ body {
   color: white;
   background: radial-gradient(
     circle at center,
-    #474747 0%,
+    #2c2929 0%,
     #000000 100%
   ); /* permet de mettre un ptit dégradé a la page complete*/
   margin: 0;
@@ -131,10 +131,6 @@ header ul a li {
   margin-left: 8%;
   min-width: 600px;
   max-width: 600px;
-}
-
-.pent-jaune {
-  color: gold;
 }
 
 .resume h3 {
@@ -378,8 +374,8 @@ footer {
 .fin-page h4 {
   display: flex;
   justify-content: center;
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  font-weight: 1000; /* Poids léger pour l'élégance */
   font-size: 30px;
   font-style: italic;
 }
