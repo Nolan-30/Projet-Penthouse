@@ -13,12 +13,17 @@ a {
 body {
   background-color: black;
   color: white;
+  background: radial-gradient(
+    circle at center,
+    #474747 0%,
+    #000000 100%
+  ); /* permet de mettre un ptit dégradé a la page complete*/
   margin: 0;
 }
 
 /* HEADER */
 header {
-  border-top: 2px solid white;
+  border-top: 1px solid rgba(41, 41, 41, 0.489);
   display: flex;
   justify-content: space-between; /* espace entre le titre et le menu */
   align-items: center; /* centre verticalement */
@@ -53,7 +58,7 @@ header li:hover {
   transition: 1s;
 }
 
-/* Hera Palace partie */
+/* Penthouse partie */
 
 .tour {
   margin-top: 5%;
@@ -151,14 +156,14 @@ header li:hover {
   color: gold;
   font-size: 30px;
   font-style: oblique;
-  text-decoration: underline;
+  text-decoration: underline; /* permet de souligné du texte*/
 }
 
 .personnages-container {
   display: flex; /* Active Flexbox */
   justify-content: center; /* Commence l'alignement à gauche */
 
-  gap: 110px; /* Ajoute un espacement entre les cartes (facultatif, mais recommandé) */
+  gap: 110px;
   margin-top: 1%;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -207,8 +212,15 @@ header li:hover {
   border-bottom: 10px solid rgba(41, 41, 41, 0.489);
 }
 
+.degrader-gold {
+  background: linear-gradient(to right, gold, #7d6f00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .degrader-blanc {
-  background: linear-gradient(to right, #828282, #3f3f3f);
+  background: linear-gradient(to right, #ffffff, #5b5b5b);
 
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -234,7 +246,7 @@ header li:hover {
   border-radius: 10px;
   border-top: 0;
   margin: 0;
-  margin-bottom: 15%; /* pr laisser de l'espace pour mettre la border en dessous qui limite chaque grande partie */
+  margin-bottom: 15%; /* laisse de l'espace pour mettre la border qui delimite les grande parties*/
 
   color: rgb(255, 255, 255);
 
@@ -251,40 +263,15 @@ header li:hover {
 }
 
 /* Info sur Min Seol-a */
-
-.degrader-gold {
-  background: linear-gradient(to right, gold, #7d6f00);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* Permet de mettre du texte en dégradé gold */
 
 .min_seol-a-perso img {
   border: 3px solid transparent;
-  border-image: linear-gradient(45deg, gold, #ffd700, #b8860b) 1;
-}
-
-.border-gold {
-  /* 1. On met le dégradé EN TANT QUE FOND */
-  background: linear-gradient(45deg, gold, #ffd700, #583f00);
-
-  /* 2. On applique l'arrondi AU CONTENEUR */
-  border-radius: 10px;
-
-  /* 3. On crée la "fausse bordure" avec le padding */
-  /* (Haut: 3px, Côtés: 3px, Bas: 10px) */
-  padding: 3px 3px 10px 3px;
-
-  /* 4. On garde ceci pour un affichage correct */
-  display: inline-block;
-  font-size: 0; /* Corrige un espace blanc sous l'image */
 }
 
 .min_seol-a-perso p {
   border: 3px solid transparent;
   border-image: linear-gradient(45deg, gold, #ffd700, #b8860b) 1;
-
-  /* pr centrer le txt et qu'il prenne tt la place de la box */
 
   /* alignement du txt */
 
@@ -293,16 +280,12 @@ header li:hover {
   min-height: 100px;
   max-height: 100px;
 
-  margin-left: auto;
-  margin-right: auto;
-
   /* Centrage du texte à l'intérieur du bloc */
   display: flex;
   text-align: center;
   align-items: center;
 
-  /* Autres styles si besoin (ex: bordures, couleurs, etc.) */
-  color: white; /* Assurez-vous qu'il soit visible */
+  color: white;
 }
 
 .seol-a-nom a:hover,
