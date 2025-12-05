@@ -246,7 +246,7 @@ header ul a li {
 }
 
 .degrader-blanc-footer {
-  background: linear-gradient(to right, #a8a7a7, #676666);
+  background: linear-gradient(to right, #ffffff, #8d8d8d);
 
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -364,18 +364,18 @@ header ul a li {
 
 /* FOOTER */
 footer {
-  border-top: 1px solid rgba(132, 132, 132, 0.489);
-
   padding: 10px;
   margin-top: 5%;
   background: linear-gradient(rgb(0, 0, 0), rgb(241, 184, 51));
 }
 
-.test .fin-page h4 {
+.fin-page h4 {
   display: flex;
   justify-content: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 1000; /* Poids léger pour l'élégance */
+  text-align: center;
+
   font-size: 30px;
-  font-style: italic;
+
+  font-family: "Cinzel", serif;
+  line-height: 1.2; /* ou 1.3 */
 }
