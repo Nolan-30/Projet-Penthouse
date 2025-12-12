@@ -110,12 +110,12 @@ header ul a li {
   border: 3px solid rgba(41, 41, 41, 0.489);
   margin-bottom: 10%;
 
-  transition: transform 3s ease-out;
+  transition: transform 1s ease-out;
 }
 
 .penthouse-img:hover img {
   /* Petit zoom */
-  transform: scale(1.05);
+  transform: scale(1.02);
   /* petit effet doré sur les bordures qd on passe dessus*/
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
@@ -189,7 +189,9 @@ header ul a li {
 /*                  */
 
 .perso h2 {
-  margin-left: 8%;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
   color: gold;
   font-size: 30px;
   font-family: "Cinzel", serif;
@@ -214,7 +216,7 @@ header ul a li {
 
 .personnage-carte:hover img {
   /* Petit zoom */
-  transform: scale(1.03);
+  transform: scale(1.02);
   /* petit effet doré sur les bordures qd on passe dessus*/
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
@@ -298,10 +300,10 @@ header ul a li {
   border: 3px solid rgba(41, 41, 41, 0.489);
   border-radius: 10px;
   border-top: 0;
+  color: rgb(255, 255, 255);
+
   margin: 0;
   margin-bottom: 15%; /* laisse de l'espace pour mettre la border qui delimite les grande parties*/
-
-  color: rgb(255, 255, 255);
 
   /* pr centrer le txt et qu'il prenne tt la place de la box */
   display: flex;
@@ -374,6 +376,8 @@ header ul a li {
   display: flex;
   justify-content: center;
   margin-top: 3%;
+  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
+  margin-bottom: 5%;
 }
 .membres-cles p {
   color: white;
@@ -381,6 +385,7 @@ header ul a li {
   font-size: 20px;
   font-family: "Playfair Display", serif;
   font-weight: 700; /* Poids gras pour les titres */
+  margin-bottom: 5%;
 }
 
 .oblic {
@@ -389,13 +394,25 @@ header ul a li {
   text-align: center;
 }
 
-/* Box saisons 
+/* Box saisons  */
+.saisons h2 {
+  text-align: center;
+  margin-bottom: 5%;
+  color: gold;
+  font-size: 30px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-style: oblique;
+  text-decoration: underline; /* permet de souligné du texte*/
+}
 
 .saisons-container {
+  margin-top: 5%;
   display: flex;
-  margin-left: 8%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-  */
 
 /* FOOTER */
 footer {
