@@ -137,7 +137,8 @@ h2 {
   margin-bottom: 5%;
 }
 .resume h2 {
-  margin-left: -1290px;
+  letter-spacing: 2px;
+  margin-left: -1250px;
   font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
@@ -199,6 +200,7 @@ h2 {
 
 .perso h2 {
   text-align: center;
+  letter-spacing: 2px;
   margin-bottom: 5%;
   margin-top: 5%;
   color: gold;
@@ -409,7 +411,7 @@ h2 {
 }
 
 .seasons-container h2 {
-  margin-top: -5%;
+  letter-spacing: 2px;
   text-align: center;
   font-size: 40px;
   font-family: "Cinzel", serif;
@@ -463,6 +465,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 4px;
 }
 
@@ -476,17 +479,21 @@ h2 {
 .season-thumbnail span img {
   transition: transform 1s ease-out;
   border-radius: 10px;
+  border: 1px solid rgba(85, 85, 85, 0.489);
+  transition: transform 1s ease-out;
 }
 .season-thumbnail span img:hover {
   display: flex;
   border-radius: 10px;
-  transform: scale(1.05);
+  transform: scale(1.02);
   /* petit effet doré sur les bordures qd on passe dessus*/
-  box-shadow: 0 0 10px rgb(241, 241, 241);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 /* --- CONTENU TEXTE --- */
 .season-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 a,
@@ -505,6 +512,7 @@ li {
 }
 
 .description {
+  text-align: center;
   max-width: 290px;
   color: #aeb4c0;
   font-size: 1rem;
