@@ -455,7 +455,17 @@ h2 {
 .border-yellow {
   display: flex;
   align-items: center;
-  border-left-color: #dcb12d;
+  border: 5px solid;
+  border-image: linear-gradient(
+      to right,
+      #000000,
+      #686101,
+      #b38728,
+      #b9ac01,
+      #000000
+    )
+    1;
+  border-radius: 10px;
 }
 
 .season-thumbnail {
@@ -466,7 +476,24 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 4px;
+
+  margin-left: 5%;
+}
+
+.cover-gap {
+  height: 150px;
+  margin-left: 10%;
+  border: 1px solid; /* On définit l'épaisseur */
+  border-image: linear-gradient(
+      to right,
+      #191919,
+      #393500,
+      #b38728,
+      #b9ac01,
+      #000000
+    )
+    1;
+  border-radius: 10px;
 }
 
 .season-thumbnail span {
@@ -491,9 +518,11 @@ h2 {
 }
 /* --- CONTENU TEXTE --- */
 .season-content {
-  flex: 1;
+  flex: 1; /* pr le decaler un peu */
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a,
