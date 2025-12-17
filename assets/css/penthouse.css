@@ -40,6 +40,16 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.border-grey {
+  border-top: 1px solid rgba(132, 132, 132, 0.489);
+  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
+}
+
+.border-grey-perso {
+  border-top: 1px solid rgba(132, 132, 132, 0.489);
+  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
+}
+
 body {
   background-color: black;
   color: white;
@@ -58,7 +68,7 @@ header {
   position: fixed;
   z-index: 1;
   top: 0;
-  height: 80px;
+  height: 100px;
   width: 100%; /* mettre une taille fixe au header sinon il sera coupé */
   display: flex;
   justify-content: space-between; /* espace entre le titre et le menu */
@@ -120,27 +130,17 @@ h2 {
 .tour a h2 {
   text-decoration: none;
   color: gold;
-  margin-bottom: 2%;
-}
-
-.tour li {
-  list-style: none;
-  margin-bottom: -1%;
 }
 
 .tour h2 {
   color: gold;
 }
 
-.border-grey {
-  border-top: 1px solid rgba(132, 132, 132, 0.489);
-  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
+.tour span h2 {
+  margin-top: 150px;
+  color: gold;
 }
 
-.border-grey-perso {
-  border-top: 1px solid rgba(132, 132, 132, 0.489);
-  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
-}
 .penthouse-img {
   display: flex;
   justify-content: center;
