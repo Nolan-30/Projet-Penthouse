@@ -82,6 +82,27 @@ header img {
   border-radius: 10px;
 }
 
+header ul a li {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+header ul a li::after {
+  content: ""; /* permet un ptit surlignement au survol de la list*/
+  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 0;
+  background-color: gold;
+  transition: width 0.5s ease; /* L'animation de la ligne */
+}
+
+header ul a li:hover::after {
+  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+}
+
 /* Liste de navigation à droite */
 ul {
   list-style: none;
@@ -92,19 +113,13 @@ ul {
 }
 
 /* Liens du menu */
-li {
-  transition: color 1s;
-}
-
-header li:hover {
-  color: rgb(0, 0, 0);
-}
 
 header ul a li {
   font-family: "Lato", sans-serif;
   font-weight: 700; /* Poids léger pour l'élégance */
   font-size: 20px;
 }
+
 .bg-penthouse {
   background: linear-gradient(rgb(0, 0, 0), rgb(24, 24, 24));
 }
@@ -305,6 +320,7 @@ h2 {
 
   gap: 130px;
 }
+
 .description-perso p {
   /* couleur */
   border: 3px solid rgba(41, 41, 41, 0.489);
@@ -325,59 +341,6 @@ h2 {
   max-width: 230px;
   min-height: 100px;
   max-height: 100px;
-}
-
-/* Info sur Min Seol-a */
-/* Permet de mettre du texte en dégradé gold */
-
-.min_seol-a-perso img {
-  border: 3px solid transparent;
-}
-
-.min_seol-a-perso p {
-  border: 3px solid transparent;
-  border-image: linear-gradient(45deg, gold, #ffd700, #b8860b) 1;
-
-  /* alignement du txt */
-
-  min-width: 330px;
-  max-width: 330px;
-  min-height: 100px;
-  max-height: 100px;
-
-  /* Centrage du texte à l'intérieur du bloc */
-  display: flex;
-  text-align: center;
-  align-items: center;
-
-  color: white;
-}
-
-.seol-a-nom a:hover,
-.min_seol-a-perso p:hover {
-  color: gold;
-  transition: 1s;
-}
-
-.seol-a-container {
-  display: flex;
-  justify-content: center;
-}
-.seol-a-carte {
-  display: flex;
-
-  align-items: center;
-  flex-direction: column;
-}
-.seol-a-nom a {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  text-decoration: none;
-  color: white;
-  margin-bottom: 2%;
-  font-style: oblique;
-  font-size: 30px;
 }
 
 /* membres cles */
@@ -507,7 +470,6 @@ h2 {
   transition: transform 1s ease-out;
   border-radius: 10px;
   border: 1px solid rgba(85, 85, 85, 0.489);
-  transition: transform 1s ease-out;
 }
 .season-thumbnail span img:hover {
   display: flex;
