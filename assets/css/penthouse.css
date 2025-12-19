@@ -96,7 +96,7 @@ header ul a li::after {
   bottom: 0;
   left: 0;
   background-color: gold;
-  transition: width 0.5s ease; /* L'animation de la ligne */
+  transition: width 1s ease; /* L'animation de la ligne */
 }
 
 header ul a li:hover::after {
@@ -178,27 +178,30 @@ h2 {
 }
 
 /* BOX RESUME */
+
 .resume {
-  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
   margin-bottom: 5%;
+  margin-left: 5%;
 }
 .resume h2 {
-  margin-left: 5%;
+  text-align: center;
   letter-spacing: 2px;
-  margin-left: -1250px;
+
   font-size: 40px;
   font-family: "Cinzel", serif;
   font-weight: 700;
-  font-style: italic;
+  margin-bottom: 10%;
 }
 .resume p {
-  margin-left: 8%;
   min-width: 600px;
   max-width: 600px;
+  font-size: 20px;
 }
 
 .resume h3 {
-  margin-left: 8%;
   color: gold;
   /*  STYLE*/
   font-style: italic;
@@ -219,7 +222,7 @@ h2 {
 /* placement de l'image */
 .img-seol-a {
   margin-left: 60%;
-  margin-top: -170px;
+  margin-top: -200px;
 }
 
 .img-seol-a img {
@@ -370,6 +373,8 @@ h2 {
 /* Box saisons  */
 
 .seasons-container {
+  display: flex;
+  flex-direction: column; /* pr empiler / aligner de maniere vertical */
   max-width: 70%;
   margin: 0 auto;
   padding: 60px 20px;
