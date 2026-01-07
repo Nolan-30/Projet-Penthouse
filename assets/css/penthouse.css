@@ -440,7 +440,7 @@ h2 {
 
   /* supperposition de 2 gradient pr permettre l'arrondi */
   background: linear-gradient(black, black) padding-box,
-    linear-gradient(to right, #7c7801, #7c7801, #2a2f00, #1c2000, #000000)
+    linear-gradient(to right, #7c7801, #7c7801, #2a2f00, #1c2000, #121212)
       border-box;
 }
 
