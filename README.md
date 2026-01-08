@@ -18,6 +18,9 @@ Animations AOS : Intégration de la bibliothèque Animate On Scroll pour une app
 
 Navigation Fluide : Menu à ancres (Smooth Scroll) permettant de naviguer instantanément entre les sections.
 
+
+Page Responsive sur mobile : L'interface a été entièrement optimisée pour offrir une navigation fluide sur smartphone grâce à l'utilisation de Media Queries.
+
 📂 Structure du Projet
 index.html : Structure sémantique du site.
 
