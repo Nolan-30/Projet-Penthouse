@@ -514,6 +514,7 @@ li {
 }
 
 .highlight {
+  text-align: center;
   color: #6e7681;
   font-style: italic;
   font-size: 0.9rem;
@@ -541,6 +542,15 @@ footer {
 /****    Responsive   ***/
 
 /* Partie Header */
+@media (max-width: 768px) {
+  header a img {
+    margin-left: -25%; /* deplacement du logo  pour gerer l'espace avec la nav */
+  }
+  header ul {
+    gap: 35px;
+    margin-left: 120px;
+  }
+}
 
 /*  Partie Penthouse  */
 @media (max-width: 768px) {
