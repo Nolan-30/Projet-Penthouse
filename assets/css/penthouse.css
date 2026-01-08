@@ -560,21 +560,20 @@ footer {
   .box-resume p,
   h3,
   a {
-    min-width: 300px;
-    max-width: 450px; /*on change la width de 600px qu'on avait definit plus haut0 */
+    /* 1. On supple la min-width de 600px qui etait definit plus haut */
+    min-width: 0;
+    max-width: 450px;
 
-    margin: 0 auto; /* Centre le bloc <p> lui-même dans la page */
-    display: flex;
-    justify-content: center;
+    margin: 20px auto;
+
+    text-align: center;
   }
 
   .box-resume h3 {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
-  .box-resume a {
-    margin-top: 15%;
-  }
+
   .img-seol-a {
     margin-top: -25%; /* pr reduire le gap */
     display: flex;
@@ -595,13 +594,16 @@ footer {
 @media (max-width: 768px) {
   .membres-cles .degrader-gold {
     display: flex;
+    flex-direction: column;
+  }
+
+  .membres-cles .oblic a {
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-  }
-  .membres-cles .oblic {
-    margin-top: 2%;
-    width: 70%;
+
+    max-width: 150px;
+    margin: 10px;
   }
 }
 
