@@ -78,8 +78,15 @@ header {
 
   border-top: 1px solid rgba(41, 41, 41, 0.489);
 }
+
 header img {
+  transition: transform 2s ease-out;
   border-radius: 10px;
+}
+header img:hover {
+  transform: scale(1.1);
+
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
 header ul a li {
@@ -123,18 +130,18 @@ header ul a li {
 .bg-penthouse {
   background: linear-gradient(rgb(0, 0, 0), rgb(24, 24, 24));
 }
-.tour a h2:hover {
+.presentation a h2:hover {
   color: rgb(255, 0, 0);
   transition: 1s;
 }
 
 /* Penthouse partie */
 
-.tour {
+.presentation {
   padding: 20px;
 }
 
-.tour a,
+.presentation a,
 h2 {
   text-align: center;
   font-style: italic;
@@ -142,16 +149,16 @@ h2 {
   font-weight: 700; /* Poids léger pour l'élégance */
 }
 
-.tour a h2 {
+.presentation a h2 {
   text-decoration: none;
   color: gold;
 }
 
-.tour h2 {
+.presentation h2 {
   color: gold;
 }
 
-.tour span h2 {
+.presentation span h2 {
   margin-top: 150px;
   color: gold;
 }
