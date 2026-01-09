@@ -5,7 +5,7 @@ Je l'ai conçu pour offrir une expérience immersive explorant l'intrigue, les p
 🌍 Déploiement
 Le site est hébergé en ligne via GitHub Pages et est accessible ici :
 
-👉 Voir le site en direct : 
+👉 Voir le site en direct : https://nolan-30.github.io/Projet-Penthouse/
 
 🚀 Fonctionnalités principales
 Design Premium : Une interface sombre avec des dégradés dorés reflétant l'aspect luxueux et dramatique du Hera Palace.
