@@ -101,7 +101,7 @@ header ul a li::after {
   bottom: 0;
   left: 0;
   background-color: gold;
-  transition: width 1s ease; /* L'animation de la ligne */
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
 
 header ul a li:hover::after {
@@ -540,7 +540,9 @@ footer {
 /* Partie Header */
 @media (max-width: 768px) {
   header a img {
-    margin-left: -25%; /* deplacement du logo  pour gerer l'espace avec la nav */
+    position: absolute;
+    top: -10px;
+    left: -20px;
   }
   header ul {
     gap: 35px;
