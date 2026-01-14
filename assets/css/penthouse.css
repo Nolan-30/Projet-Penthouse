@@ -276,11 +276,11 @@ h2 {
   margin-bottom: 5%;
 }
 /* ajt d'effet de zoom qd je passe sur une image */
-.personnage-carte img {
+.perso-pic img {
   transition: transform 1s ease-out;
 }
 
-.personnage-carte:hover img {
+.perso-pic:hover img {
   /* ptit effet de zoom */
   transform: scale(1.02);
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
@@ -296,6 +296,30 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* ajt du surlignement sur le nom des main perso */
+
+.nom-perso a {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+/* test pr mettre un surlignement lorsqu'on passe sur les prenoms des perso comme dans le header */
+.nom-perso a::after {
+  content: ""; /* permet un ptit surlignement au survol de la list*/
+  position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 215, 0, 0.5);
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
+}
+
+.nom-perso a:hover::after {
+  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
 .nom-perso {
@@ -364,6 +388,28 @@ h2 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   margin-bottom: 5%;
+}
+
+.membres-cles p {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+/* test pr mettre un surlignement lorsqu'on passe sur les prenoms des perso comme dans le header */
+.membres-cles p::after {
+  content: ""; /* permet un ptit surlignement au survol de la list*/
+  position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 215, 0, 0.5);
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
+}
+
+.membres-cles p:hover::after {
+  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
 .oblic {
@@ -483,6 +529,28 @@ h2 {
   align-items: center;
 }
 
+.saison-content h2 {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+/* test pr mettre un surlignement lorsqu'on passe sur les prenoms des perso comme dans le header */
+.saison-content h2::after {
+  content: ""; /* permet un ptit surlignement au survol de la list*/
+  position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
+}
+
+.saison-content h2:hover::after {
+  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
+}
+
 a,
 li {
   text-decoration: none;
@@ -513,7 +581,7 @@ li {
   text-align: center;
   color: #6e7681;
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* FOOTER */
@@ -545,7 +613,7 @@ footer {
     left: -20px;
   }
   header ul {
-    gap: 35px;
+    gap: 30px;
     margin-left: 100px;
   }
 }
