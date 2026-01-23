@@ -29,11 +29,6 @@ a {
   border-bottom: 1px solid rgba(132, 132, 132, 0.489);
 }
 
-.border-grey-perso {
-  border-top: 1px solid rgba(132, 132, 132, 0.489);
-  border-bottom: 1px solid rgba(132, 132, 132, 0.489);
-}
-
 body {
   background-color: black;
   color: white;
@@ -58,9 +53,10 @@ header {
   justify-content: space-between; /* espace entre le titre et le menu */
   align-items: center; /* centre verticalement */
   padding: 10px 40px;
-  background: linear-gradient(rgb(241, 184, 51), rgb(0, 0, 0));
+  background: radial-gradient(circle at center, #3a3300 0%, #000000 100%);
 
-  border-top: 1px solid rgba(41, 41, 41, 0.489);
+  border-image: linear-gradient(to right, #000000, #b38728, #000000) 1;
+  border-bottom: 1px solid rgb(41, 41, 41);
 }
 
 header img {
@@ -105,36 +101,6 @@ header ul a li {
   font-family: "Lato", sans-serif;
   font-weight: 700; /* Poids léger pour l'élégance */
   font-size: 20px;
-}
-
-.presentation a h2:hover {
-  color: rgb(255, 0, 0);
-  transition: 1s;
-}
-
-/* surlignement */
-
-.presentation a h2 {
-  margin: 0px 500px 0px 500px; /* margin a gauche et a droite pour bien centrer la ligne au survol */
-
-  position: relative;
-
-  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
-}
-
-.presentation a h2::after {
-  content: "";
-  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
-  width: 0;
-  height: 2px; /* hauteur du surlignement */
-  bottom: 0;
-  left: 0;
-  background-color: rgb(255, 0, 0);
-  transition: width 1s ease; /* largeur de l'animation de la ligne */
-}
-
-.presentation a h2:hover::after {
-  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
 /*** PENTHOUSE PARTIE ***/
@@ -404,6 +370,28 @@ h2 {
   max-height: 100px;
 }
 
+.description-perso-seol-a p {
+  /* couleur */
+  border: 3px solid rgba(48, 48, 48, 0.489);
+  border-radius: 10px;
+  border-top: 0;
+  color: rgb(255, 255, 255);
+
+  margin: 0;
+  margin-bottom: 15%; /* laisse de l'espace pour mettre la border qui delimite les grande parties*/
+
+  /* pr centrer le txt et qu'il prenne tt la place de la box */
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  /* alignement du txt */
+  min-width: 230px;
+  max-width: 230px;
+  min-height: 100px;
+  max-height: 100px;
+}
+
 /* membres cles */
 
 .membres-cles {
@@ -620,8 +608,13 @@ li {
 footer {
   padding: 10px;
   margin-top: 5%;
-  background: linear-gradient(rgb(0, 0, 0), rgb(241, 184, 51));
   height: 170px;
+  border-top: 1px solid rgb(41, 41, 41);
+
+  /* BG */
+  background: radial-gradient(circle at center, #3a3300 0%, #000000 100%);
+
+  border-image: linear-gradient(to right, #000000, #b38728, #000000) 1;
 }
 
 .fin-page h4 {
