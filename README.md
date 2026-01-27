@@ -11,6 +11,7 @@ Le site est hébergé en ligne via GitHub Pages et est accessible ici :
 Design Premium : Une interface sombre avec des dégradés dorés reflétant l'aspect luxueux et dramatique de la série.
 
 🗓️ Chronologie des Saisons : Un résumé court et percutant des saisons 1, 2 et 3 avec les moments clés (Highlights).
+🎬 Bonus interactif : Chaque carte de saison est liée à sa bande-annonce (non officiel) sur YouTube, accessible d'un simple clic pour une immersion immédiate.
 
 🎭 Galerie de Personnages : Cartes interactives présentant les protagonistes avec des liens vers leurs biographies détaillées.
 
