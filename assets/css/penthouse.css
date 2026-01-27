@@ -118,7 +118,7 @@ h2 {
 }
 
 .presentation h2 {
-  /* degrader gold */
+  /* degrader gold pr le texte "le luxe...." */
   background: linear-gradient(to right, gold, #7d6f00);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -128,6 +128,16 @@ h2 {
 .presentation span h2 {
   margin-top: 150px; /* pr separer les 2 txt */
   /* degrader gold */
+  background: linear-gradient(to right, gold, #7d6f00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TEST POUR LA PARTIE PRESENTATION */
+
+.test-presentation h2 {
+  /* degrader gold pr le texte "le luxe...." */
   background: linear-gradient(to right, gold, #7d6f00);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -149,11 +159,11 @@ h2 {
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
   left: 0;
-  color: gold;
+  color: rgb(255, 255, 255);
   transition: width ease; /* largeur de l'animation de la ligne */
 }
 
-.presentation span h2:hover::after {
+.presentation a span h2:hover::after {
   width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
