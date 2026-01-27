@@ -195,7 +195,6 @@ h2 {
 }
 
 .box-resume h3 {
-  color: gold;
   /*  STYLE*/
   font-style: italic;
   font-family: "Lato", sans-serif;
@@ -203,14 +202,18 @@ h2 {
 }
 
 .box-resume h3 {
+  /* degrader gold */
+  background: linear-gradient(to right, gold, #7d6f00);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
 
   padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
 }
 
 .box-resume a {
-  color: gold;
-  text-decoration: none;
+  color: white;
 }
 
 .box-resume a:hover {
@@ -323,7 +326,7 @@ h2 {
   bottom: 0;
   left: 0;
   background-color: rgb(255, 215, 0, 0.5);
-  transition: width 2s ease; /* largeur de l'animation de la ligne */
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
 
 .nom-perso a:hover::after {
