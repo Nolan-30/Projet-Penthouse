@@ -141,7 +141,8 @@ h2 {
   width: 0;
   height: 2px; /* hauteur du surlignement */
   bottom: 0;
-  left: 700px; /* on deplace le surlignement pour qu'il commence au debut du txt */
+  left: 705px; /* on deplace le surlignement pour qu'il commence au debut du txt */
+
   background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
   transition: width 1s ease; /* largeur de l'animation de la ligne */
 }
