@@ -124,14 +124,30 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* ajt d'un margin bottom que pr le txt "decouvrir la serie sur netflix*/
+.presentation h2:first-child {
+  margin-top: 150px;
+}
 
-.presentation span h2 {
-  margin-top: 150px; /* pr separer les 2 txt */
-  /* degrader gold */
-  background: linear-gradient(to right, gold, #7d6f00);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.presentation h2:first-child {
+  position: relative;
+
+  padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
+}
+
+.presentation h2:first-child::after {
+  content: ""; /* permet un ptit surlignement au survol de la list*/
+  position: absolute; /* definition d'une position fixe pr que le surlignement bouge jms */
+  width: 0;
+  height: 2px; /* hauteur du surlignement */
+  bottom: 0;
+  left: 700px; /* on deplace le surlignement pour qu'il commence au debut du txt */
+  background: radial-gradient(circle at center, #ffee03 0%, #000000 100%);
+  transition: width 1s ease; /* largeur de l'animation de la ligne */
+}
+
+.presentation h2:first-child:hover::after {
+  width: 25%; /
 }
 
 /* TEST POUR LA PARTIE PRESENTATION */
@@ -150,21 +166,6 @@ h2 {
   position: relative;
 
   padding-bottom: 5px; /* le surlignement sera legerement un peu + en dessous */
-}
-
-.presentation a span h2::after {
-  content: ""; /* permet un ptit surlignement au survol de la list*/
-  position: absolute; /* definition d'une position fixe pr que le surlignement ne bouge jms */
-  width: 0;
-  height: 2px; /* hauteur du surlignement */
-  bottom: 0;
-  left: 0;
-  color: rgb(255, 255, 255);
-  transition: width ease; /* largeur de l'animation de la ligne */
-}
-
-.presentation a span h2:hover::after {
-  width: 100%; /* pr que le surlignement prenne tt la largeur de chaque au moment du survol */
 }
 
 .penthouse-pic {
