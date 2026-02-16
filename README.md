@@ -1,4 +1,4 @@
-🏰 Projet Penthouse
+## 🏰 Projet Penthouse
 Ce projet est un site vitrine interactif dédié à la célèbre série sud-coréenne "The Penthouse: War in Life" (Mon K drama préféré).
 Je l'ai conçu pour offrir une expérience immersive explorant l'intrigue, les personnages iconiques et la chronologie des trois saisons.
 
